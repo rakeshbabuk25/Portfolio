@@ -1,0 +1,116 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgFraud" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0f1e"/>
+      <stop offset="100%" stop-color="#0f1a0a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgFraud)"/>
+
+  <!-- Title -->
+  <text x="400" y="42" fill="#1e90ff" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" letter-spacing="3">REAL-TIME FRAUD DETECTION — MLOps PIPELINE</text>
+  <line x1="80" y1="52" x2="720" y2="52" stroke="#1e3a5f" stroke-width="1"/>
+
+  <!-- STEP 1: Producer / Kafka -->
+  <rect x="40" y="80" width="130" height="80" rx="10" fill="#0d1a2e" stroke="#1e90ff" stroke-width="1.5"/>
+  <text x="105" y="112" fill="#4fc3f7" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">PRODUCER</text>
+  <text x="105" y="128" fill="#8aabcc" font-family="sans-serif" font-size="9" text-anchor="middle">Synthetic tx stream</text>
+  <text x="105" y="143" fill="#4fc3f7" font-family="sans-serif" font-size="18" text-anchor="middle">⚡</text>
+
+  <!-- Arrow -->
+  <line x1="170" y1="120" x2="205" y2="120" stroke="#1e90ff" stroke-width="1.5"/>
+  <polygon points="202,115 212,120 202,125" fill="#1e90ff"/>
+
+  <!-- STEP 2: Redpanda/Kafka -->
+  <rect x="210" y="80" width="130" height="80" rx="10" fill="#0d1a2e" stroke="#ff6b35" stroke-width="1.5"/>
+  <text x="275" y="112" fill="#ff6b35" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">REDPANDA</text>
+  <text x="275" y="128" fill="#8aabcc" font-family="sans-serif" font-size="9" text-anchor="middle">Kafka-compatible broker</text>
+  <text x="275" y="145" fill="#ff6b35" font-family="sans-serif" font-size="16" text-anchor="middle">📨</text>
+
+  <!-- Arrow -->
+  <line x1="340" y1="120" x2="375" y2="120" stroke="#1e90ff" stroke-width="1.5"/>
+  <polygon points="372,115 382,120 372,125" fill="#1e90ff"/>
+
+  <!-- STEP 3: Consumer -->
+  <rect x="380" y="80" width="130" height="80" rx="10" fill="#0d1a2e" stroke="#1e90ff" stroke-width="1.5"/>
+  <text x="445" y="112" fill="#4fc3f7" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">CONSUMER</text>
+  <text x="445" y="128" fill="#8aabcc" font-family="sans-serif" font-size="9" text-anchor="middle">Stream worker</text>
+  <text x="445" y="145" fill="#4fc3f7" font-family="sans-serif" font-size="16" text-anchor="middle">🔄</text>
+
+  <!-- Arrow -->
+  <line x1="510" y1="120" x2="545" y2="120" stroke="#1e90ff" stroke-width="1.5"/>
+  <polygon points="542,115 552,120 542,125" fill="#1e90ff"/>
+
+  <!-- STEP 4: FastAPI scoring -->
+  <rect x="550" y="80" width="130" height="80" rx="10" fill="#0d1a2e" stroke="#28c840" stroke-width="1.5"/>
+  <text x="615" y="108" fill="#28c840" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">FASTAPI</text>
+  <text x="615" y="122" fill="#8aabcc" font-family="sans-serif" font-size="9" text-anchor="middle">POST /score</text>
+  <text x="615" y="136" fill="#8aabcc" font-family="sans-serif" font-size="9" text-anchor="middle">Low-latency scoring</text>
+  <text x="615" y="152" fill="#28c840" font-family="sans-serif" font-size="16" text-anchor="middle">🚀</text>
+
+  <!-- Down arrow from FastAPI to Postgres -->
+  <line x1="615" y1="160" x2="615" y2="200" stroke="#1e90ff" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <polygon points="610,197 620,197 615,207" fill="#1e90ff"/>
+
+  <!-- Down arrow from Consumer to Postgres too -->
+  <line x1="445" y1="160" x2="445" y2="220" stroke="#1e90ff" stroke-width="1.5" stroke-dasharray="4 2"/>
+
+  <!-- POSTGRES - center bottom -->
+  <rect x="340" y="207" width="180" height="75" rx="10" fill="#0d1a2e" stroke="#9b59b6" stroke-width="1.5"/>
+  <text x="430" y="232" fill="#9b59b6" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">POSTGRESQL</text>
+  <text x="430" y="248" fill="#8aabcc" font-family="sans-serif" font-size="9" text-anchor="middle">predictions · outcomes</text>
+  <text x="430" y="264" fill="#8aabcc" font-family="sans-serif" font-size="9" text-anchor="middle">model_version · metrics_runs</text>
+  <text x="430" y="276" fill="#9b59b6" font-family="sans-serif" font-size="13" text-anchor="middle">🗄️</text>
+
+  <!-- Arrow Postgres to Monitoring -->
+  <line x1="340" y1="244" x2="290" y2="300" stroke="#9b59b6" stroke-width="1.5" stroke-dasharray="4 2"/>
+
+  <!-- MONITORING -->
+  <rect x="150" y="298" width="145" height="75" rx="10" fill="#0d1a2e" stroke="#febc2e" stroke-width="1.5"/>
+  <text x="222" y="323" fill="#febc2e" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">MONITORING</text>
+  <text x="222" y="339" fill="#8aabcc" font-family="sans-serif" font-size="9" text-anchor="middle">AUPRC · Recall · PSI</text>
+  <text x="222" y="355" fill="#8aabcc" font-family="sans-serif" font-size="9" text-anchor="middle">Drift detection</text>
+  <text x="222" y="366" fill="#febc2e" font-family="sans-serif" font-size="12" text-anchor="middle">📊</text>
+
+  <!-- Arrow Monitoring to Trainer -->
+  <line x1="295" y1="335" x2="360" y2="380" stroke="#febc2e" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <text x="295" y="375" fill="#febc2e" font-family="sans-serif" font-size="9" opacity=".7">trigger retrain</text>
+
+  <!-- TRAINER / LightGBM -->
+  <rect x="360" y="378" width="145" height="75" rx="10" fill="#0d1a2e" stroke="#1e90ff" stroke-width="1.5"/>
+  <text x="432" y="403" fill="#1e90ff" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">TRAINER</text>
+  <text x="432" y="419" fill="#8aabcc" font-family="sans-serif" font-size="9" text-anchor="middle">LightGBM · MLflow</text>
+  <text x="432" y="435" fill="#8aabcc" font-family="sans-serif" font-size="9" text-anchor="middle">New model export</text>
+  <text x="432" y="447" fill="#1e90ff" font-family="sans-serif" font-size="12" text-anchor="middle">🤖</text>
+
+  <!-- Arrow Trainer back to FastAPI (restart) -->
+  <line x1="505" y1="415" x2="615" y2="250" stroke="#28c840" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <polygon points="610,248 620,244 618,254" fill="#28c840"/>
+  <text x="590" y="360" fill="#28c840" font-family="sans-serif" font-size="9" opacity=".8">restart API</text>
+
+  <!-- MLFLOW badge -->
+  <rect x="590" y="300" width="140" height="60" rx="10" fill="#0d1a2e" stroke="#3498db" stroke-width="1"/>
+  <text x="660" y="325" fill="#3498db" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle">MLflow</text>
+  <text x="660" y="341" fill="#8aabcc" font-family="sans-serif" font-size="9" text-anchor="middle">Experiment tracking</text>
+  <text x="660" y="354" fill="#3498db" font-family="sans-serif" font-size="11" text-anchor="middle">📈</text>
+
+  <!-- Tech badges bottom -->
+  <rect x="40" y="440" width="80" height="22" rx="4" fill="#1a2035" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="80" y="455" fill="#4fc3f7" font-family="monospace" font-size="9" text-anchor="middle">Python</text>
+  <rect x="128" y="440" width="80" height="22" rx="4" fill="#1a2035" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="168" y="455" fill="#4fc3f7" font-family="monospace" font-size="9" text-anchor="middle">Docker</text>
+  <rect x="216" y="440" width="80" height="22" rx="4" fill="#1a2035" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="256" y="455" fill="#4fc3f7" font-family="monospace" font-size="9" text-anchor="middle">FastAPI</text>
+  <rect x="304" y="440" width="80" height="22" rx="4" fill="#1a2035" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="344" y="455" fill="#4fc3f7" font-family="monospace" font-size="9" text-anchor="middle">LightGBM</text>
+  <rect x="392" y="440" width="80" height="22" rx="4" fill="#1a2035" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="432" y="455" fill="#4fc3f7" font-family="monospace" font-size="9" text-anchor="middle">Redpanda</text>
+  <rect x="480" y="440" width="80" height="22" rx="4" fill="#1a2035" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="520" y="455" fill="#4fc3f7" font-family="monospace" font-size="9" text-anchor="middle">PostgreSQL</text>
+  <rect x="568" y="440" width="80" height="22" rx="4" fill="#1a2035" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="608" y="455" fill="#4fc3f7" font-family="monospace" font-size="9" text-anchor="middle">MLflow</text>
+  <rect x="656" y="440" width="80" height="22" rx="4" fill="#1a2035" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="696" y="455" fill="#4fc3f7" font-family="monospace" font-size="9" text-anchor="middle">SQL</text>
+
+  <text x="400" y="492" fill="#1e90ff" opacity=".3" font-family="sans-serif" font-size="11" text-anchor="middle">Fraud RT MLOps — Streaming · Drift-Aware · Auto-Retrain</text>
+</svg>

@@ -1,0 +1,118 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGuardian" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080f12"/>
+      <stop offset="100%" stop-color="#0c1a10"/>
+    </linearGradient>
+    <linearGradient id="heartLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00e676" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#00e676"/>
+      <stop offset="100%" stop-color="#00e676" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgGuardian)"/>
+
+  <!-- Title bar -->
+  <rect x="0" y="0" width="800" height="52" fill="#050c0e"/>
+  <circle cx="26" cy="26" r="10" fill="#00e676" opacity=".2"/>
+  <circle cx="26" cy="26" r="6" fill="#00e676" opacity=".8"/>
+  <text x="46" y="31" fill="#00e676" font-family="sans-serif" font-size="14" font-weight="bold" letter-spacing="2">GUARDIAN AI HEALTH MONITOR</text>
+  <text x="680" y="31" fill="#00e676" font-family="sans-serif" font-size="11" opacity=".6">LIVE</text>
+  <circle cx="668" cy="27" r="4" fill="#00e676"/>
+
+  <!-- ECG / Heart rate waveform across full width -->
+  <polyline points="40,130 80,130 100,130 115,70 125,185 138,130 160,130 180,130 195,75 205,185 218,130 800,130"
+    fill="none" stroke="url(#heartLine)" stroke-width="2.5"/>
+
+  <!-- Left panel: ESP32 device -->
+  <rect x="40" y="165" width="180" height="240" rx="12" fill="#0a1a1e" stroke="#00e676" stroke-width="1.5" stroke-opacity=".4"/>
+  <text x="130" y="192" fill="#00e676" font-family="monospace" font-size="10" text-anchor="middle" letter-spacing="2" opacity=".7">ESP32-S3</text>
+  <!-- Chip graphic -->
+  <rect x="85" y="200" width="90" height="90" rx="6" fill="#0f2a20" stroke="#00e676" stroke-width="1"/>
+  <rect x="93" y="208" width="74" height="74" rx="4" fill="#071510"/>
+  <text x="130" y="250" fill="#00e676" font-family="monospace" font-size="20" text-anchor="middle">⬡</text>
+  <text x="130" y="268" fill="#00e676" font-family="sans-serif" font-size="9" text-anchor="middle" opacity=".7">TinyML</text>
+  <!-- Pins on sides -->
+  <rect x="68" y="210" width="17" height="5" rx="2" fill="#00e676" opacity=".3"/>
+  <rect x="68" y="222" width="17" height="5" rx="2" fill="#00e676" opacity=".3"/>
+  <rect x="68" y="234" width="17" height="5" rx="2" fill="#00e676" opacity=".3"/>
+  <rect x="68" y="246" width="17" height="5" rx="2" fill="#00e676" opacity=".3"/>
+  <rect x="68" y="258" width="17" height="5" rx="2" fill="#00e676" opacity=".3"/>
+  <rect x="175" y="210" width="17" height="5" rx="2" fill="#00e676" opacity=".3"/>
+  <rect x="175" y="222" width="17" height="5" rx="2" fill="#00e676" opacity=".3"/>
+  <rect x="175" y="234" width="17" height="5" rx="2" fill="#00e676" opacity=".3"/>
+  <rect x="175" y="246" width="17" height="5" rx="2" fill="#00e676" opacity=".3"/>
+  <rect x="175" y="258" width="17" height="5" rx="2" fill="#00e676" opacity=".3"/>
+
+  <!-- Sensors list -->
+  <text x="65" y="318" fill="#8abcaa" font-family="sans-serif" font-size="10" font-weight="bold">SENSORS</text>
+  <text x="65" y="335" fill="#00e676" font-family="sans-serif" font-size="9">♥  MAX30102 — Heart Rate</text>
+  <text x="65" y="351" fill="#00e676" font-family="sans-serif" font-size="9">🎙  INMP441 — Voice Stress</text>
+  <text x="65" y="367" fill="#00e676" font-family="sans-serif" font-size="9">📷  ESP32-CAM — Blink/Fatigue</text>
+  <text x="65" y="383" fill="#8abcaa" font-family="sans-serif" font-size="9">🔋 Li-Po 2500mAh</text>
+
+  <!-- Center: AI inference panel -->
+  <rect x="250" y="165" width="300" height="240" rx="12" fill="#0a1a0e" stroke="#00e676" stroke-width="1.5" stroke-opacity=".5"/>
+  <text x="400" y="192" fill="#00e676" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle" letter-spacing="2">EDGE AI INFERENCE</text>
+
+  <!-- MFCC + CNN block -->
+  <rect x="268" y="202" width="264" height="50" rx="8" fill="#051008" stroke="#00e676" stroke-width="1" stroke-opacity=".4"/>
+  <text x="285" y="222" fill="#8abcaa" font-family="sans-serif" font-size="10">Model: MFCC + CNN</text>
+  <text x="285" y="238" fill="#8abcaa" font-family="sans-serif" font-size="10">TensorFlow Lite (quantised)</text>
+  <!-- Mini waveform for MFCC -->
+  <rect x="440" y="208" width="4" height="30" fill="#00e676" opacity=".7"/>
+  <rect x="448" y="215" width="4" height="22" fill="#00e676" opacity=".7"/>
+  <rect x="456" y="210" width="4" height="28" fill="#00e676" opacity=".7"/>
+  <rect x="464" y="218" width="4" height="18" fill="#00e676" opacity=".7"/>
+  <rect x="472" y="213" width="4" height="24" fill="#00e676" opacity=".7"/>
+  <rect x="480" y="220" width="4" height="16" fill="#00e676" opacity=".7"/>
+  <rect x="488" y="212" width="4" height="26" fill="#00e676" opacity=".7"/>
+  <rect x="496" y="217" width="4" height="20" fill="#00e676" opacity=".7"/>
+
+  <!-- Vitals grid -->
+  <rect x="268" y="262" width="120" height="55" rx="8" fill="#051008" stroke="#00e676" stroke-width="1" stroke-opacity=".4"/>
+  <text x="328" y="282" fill="#8abcaa" font-family="sans-serif" font-size="9" text-anchor="middle">HEART RATE</text>
+  <text x="328" y="305" fill="#00e676" font-family="sans-serif" font-size="22" font-weight="bold" text-anchor="middle">72</text>
+  <text x="328" y="314" fill="#8abcaa" font-family="sans-serif" font-size="8" text-anchor="middle">bpm · Normal</text>
+
+  <rect x="398" y="262" width="134" height="55" rx="8" fill="#051008" stroke="#00e676" stroke-width="1" stroke-opacity=".4"/>
+  <text x="465" y="282" fill="#8abcaa" font-family="sans-serif" font-size="9" text-anchor="middle">STRESS LEVEL</text>
+  <text x="465" y="305" fill="#febc2e" font-family="sans-serif" font-size="22" font-weight="bold" text-anchor="middle">LOW</text>
+  <text x="465" y="314" fill="#8abcaa" font-family="sans-serif" font-size="8" text-anchor="middle">Voice analysis</text>
+
+  <rect x="268" y="327" width="120" height="55" rx="8" fill="#051008" stroke="#00e676" stroke-width="1" stroke-opacity=".4"/>
+  <text x="328" y="347" fill="#8abcaa" font-family="sans-serif" font-size="9" text-anchor="middle">FATIGUE</text>
+  <text x="328" y="370" fill="#00e676" font-family="sans-serif" font-size="22" font-weight="bold" text-anchor="middle">ALERT</text>
+  <text x="328" y="381" fill="#8abcaa" font-family="sans-serif" font-size="8" text-anchor="middle">Blink rate ↑</text>
+
+  <rect x="398" y="327" width="134" height="55" rx="8" fill="#051008" stroke="#00e676" stroke-width="1" stroke-opacity=".4"/>
+  <text x="465" y="347" fill="#8abcaa" font-family="sans-serif" font-size="9" text-anchor="middle">SpO2</text>
+  <text x="465" y="370" fill="#00e676" font-family="sans-serif" font-size="22" font-weight="bold" text-anchor="middle">98%</text>
+  <text x="465" y="381" fill="#8abcaa" font-family="sans-serif" font-size="8" text-anchor="middle">Oxygen · Normal</text>
+
+  <!-- Right panel: Cloud -->
+  <rect x="580" y="165" width="180" height="240" rx="12" fill="#0a1018" stroke="#4fc3f7" stroke-width="1.5" stroke-opacity=".4"/>
+  <text x="670" y="192" fill="#4fc3f7" font-family="sans-serif" font-size="10" text-anchor="middle" letter-spacing="2">CLOUD DASHBOARD</text>
+  <text x="670" y="215" fill="#4fc3f7" font-family="sans-serif" font-size="22" text-anchor="middle" opacity=".7">☁️</text>
+  <text x="670" y="238" fill="#8aabcc" font-family="sans-serif" font-size="10" text-anchor="middle">ThingSpeak HTTPS</text>
+
+  <!-- Mini chart in cloud panel -->
+  <polyline points="598,280 618,260 638,270 658,255 678,265 698,250 718,262 738,255"
+    fill="none" stroke="#4fc3f7" stroke-width="2"/>
+  <rect x="598" y="295" width="144" height="1" fill="#1e3a5f"/>
+
+  <text x="670" y="320" fill="#4fc3f7" font-family="sans-serif" font-size="10" text-anchor="middle">Remote monitoring</text>
+  <text x="670" y="338" fill="#8aabcc" font-family="sans-serif" font-size="9" text-anchor="middle">Secure data upload</text>
+  <text x="670" y="354" fill="#8aabcc" font-family="sans-serif" font-size="9" text-anchor="middle">Multi-modal alerts</text>
+
+  <!-- WiFi icon -->
+  <text x="670" y="385" fill="#4fc3f7" font-family="sans-serif" font-size="22" text-anchor="middle" opacity=".7">📡</text>
+
+  <!-- Connection arrows -->
+  <line x1="220" y1="285" x2="250" y2="285" stroke="#00e676" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <polygon points="247,280 257,285 247,290" fill="#00e676"/>
+  <line x1="550" y1="285" x2="580" y2="285" stroke="#4fc3f7" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <polygon points="577,280 587,285 577,290" fill="#4fc3f7"/>
+
+  <text x="400" y="490" fill="#00e676" opacity=".3" font-family="sans-serif" font-size="11" text-anchor="middle">Guardian AI — ESP32-S3 · TinyML · Edge Inference · ThingSpeak</text>
+</svg>

@@ -1,0 +1,110 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgHc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0c0f1a"/>
+      <stop offset="100%" stop-color="#100a1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgHc)"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="52" fill="#080b14"/>
+  <text x="30" y="33" fill="white" font-family="sans-serif" font-size="14" font-weight="bold">🏥  Healthcare Analytics Dashboard</text>
+  <rect x="650" y="14" width="90" height="26" rx="5" fill="#1e90ff" opacity=".15" stroke="#1e90ff" stroke-width="1"/>
+  <text x="695" y="31" fill="#1e90ff" font-family="sans-serif" font-size="11" text-anchor="middle">Power BI</text>
+
+  <!-- KPI cards row -->
+  <rect x="30" y="68" width="160" height="72" rx="8" fill="#0f1528" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="50" y="88" fill="#8aabcc" font-family="sans-serif" font-size="9" letter-spacing="1">TOTAL PATIENTS</text>
+  <text x="50" y="118" fill="white" font-family="sans-serif" font-size="28" font-weight="bold">4,821</text>
+  <text x="160" y="118" fill="#00e676" font-family="sans-serif" font-size="11">↑ 12%</text>
+
+  <rect x="205" y="68" width="160" height="72" rx="8" fill="#0f1528" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="225" y="88" fill="#8aabcc" font-family="sans-serif" font-size="9" letter-spacing="1">READMISSION RATE</text>
+  <text x="225" y="118" fill="#febc2e" font-family="sans-serif" font-size="28" font-weight="bold">8.3%</text>
+  <text x="330" y="118" fill="#febc2e" font-family="sans-serif" font-size="11">↓ 2%</text>
+
+  <rect x="380" y="68" width="160" height="72" rx="8" fill="#0f1528" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="400" y="88" fill="#8aabcc" font-family="sans-serif" font-size="9" letter-spacing="1">AVG STAY (DAYS)</text>
+  <text x="400" y="118" fill="#1e90ff" font-family="sans-serif" font-size="28" font-weight="bold">4.6</text>
+  <text x="475" y="118" fill="#00e676" font-family="sans-serif" font-size="11">↓ 0.3d</text>
+
+  <rect x="555" y="68" width="215" height="72" rx="8" fill="#0f1528" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="575" y="88" fill="#8aabcc" font-family="sans-serif" font-size="9" letter-spacing="1">SATISFACTION SCORE</text>
+  <text x="575" y="118" fill="#00e676" font-family="sans-serif" font-size="28" font-weight="bold">4.7 / 5</text>
+  <!-- Stars -->
+  <text x="700" y="116" fill="#febc2e" font-family="sans-serif" font-size="14">★★★★★</text>
+
+  <!-- LEFT: Bar chart - Admissions by dept -->
+  <rect x="30" y="155" width="360" height="190" rx="8" fill="#0a1020" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="50" y="178" fill="white" font-family="sans-serif" font-size="11" font-weight="bold">Admissions by Department</text>
+
+  <!-- Bars -->
+  <rect x="55" y="220" width="35" height="100" rx="3" fill="#1e90ff" opacity=".8"/>
+  <text x="72" y="336" fill="#8aabcc" font-family="sans-serif" font-size="8" text-anchor="middle">Cardio</text>
+  <text x="72" y="213" fill="white" font-family="sans-serif" font-size="8" text-anchor="middle">1240</text>
+
+  <rect x="105" y="245" width="35" height="75" rx="3" fill="#1e90ff" opacity=".6"/>
+  <text x="122" y="336" fill="#8aabcc" font-family="sans-serif" font-size="8" text-anchor="middle">Neuro</text>
+  <text x="122" y="238" fill="white" font-family="sans-serif" font-size="8" text-anchor="middle">940</text>
+
+  <rect x="155" y="255" width="35" height="65" rx="3" fill="#1e90ff" opacity=".5"/>
+  <text x="172" y="336" fill="#8aabcc" font-family="sans-serif" font-size="8" text-anchor="middle">Ortho</text>
+  <text x="172" y="248" fill="white" font-family="sans-serif" font-size="8" text-anchor="middle">810</text>
+
+  <rect x="205" y="235" width="35" height="85" rx="3" fill="#9b59b6" opacity=".8"/>
+  <text x="222" y="336" fill="#8aabcc" font-family="sans-serif" font-size="8" text-anchor="middle">Oncol</text>
+  <text x="222" y="228" fill="white" font-family="sans-serif" font-size="8" text-anchor="middle">1060</text>
+
+  <rect x="255" y="265" width="35" height="55" rx="3" fill="#1e90ff" opacity=".4"/>
+  <text x="272" y="336" fill="#8aabcc" font-family="sans-serif" font-size="8" text-anchor="middle">Peds</text>
+  <text x="272" y="258" fill="white" font-family="sans-serif" font-size="8" text-anchor="middle">680</text>
+
+  <rect x="305" y="278" width="35" height="42" rx="3" fill="#00e676" opacity=".6"/>
+  <text x="322" y="336" fill="#8aabcc" font-family="sans-serif" font-size="8" text-anchor="middle">Other</text>
+  <text x="322" y="271" fill="white" font-family="sans-serif" font-size="8" text-anchor="middle">520</text>
+
+  <!-- RIGHT: Donut chart - outcomes -->
+  <rect x="405" y="155" width="365" height="190" rx="8" fill="#0a1020" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="425" y="178" fill="white" font-family="sans-serif" font-size="11" font-weight="bold">Patient Outcomes</text>
+  <!-- Donut -->
+  <circle cx="530" cy="258" r="65" fill="none" stroke="#1e90ff" stroke-width="22" stroke-dasharray="245 163" stroke-dashoffset="0"/>
+  <circle cx="530" cy="258" r="65" fill="none" stroke="#00e676" stroke-width="22" stroke-dasharray="98 310" stroke-dashoffset="-245"/>
+  <circle cx="530" cy="258" r="65" fill="none" stroke="#febc2e" stroke-width="22" stroke-dasharray="57 351" stroke-dashoffset="-343"/>
+  <circle cx="530" cy="258" r="65" fill="none" stroke="#e74c3c" stroke-width="22" stroke-dasharray="8 400" stroke-dashoffset="-400"/>
+  <text x="530" y="252" fill="white" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle">60%</text>
+  <text x="530" y="268" fill="#8aabcc" font-family="sans-serif" font-size="9" text-anchor="middle">Recovered</text>
+  <!-- Legend -->
+  <rect x="625" y="225" width="10" height="10" rx="2" fill="#1e90ff"/>
+  <text x="641" y="234" fill="#8aabcc" font-family="sans-serif" font-size="9">Recovered 60%</text>
+  <rect x="625" y="243" width="10" height="10" rx="2" fill="#00e676"/>
+  <text x="641" y="252" fill="#8aabcc" font-family="sans-serif" font-size="9">Improved 24%</text>
+  <rect x="625" y="261" width="10" height="10" rx="2" fill="#febc2e"/>
+  <text x="641" y="270" fill="#8aabcc" font-family="sans-serif" font-size="9">Stable 14%</text>
+  <rect x="625" y="279" width="10" height="10" rx="2" fill="#e74c3c"/>
+  <text x="641" y="288" fill="#8aabcc" font-family="sans-serif" font-size="9">Critical 2%</text>
+
+  <!-- Bottom row: trend line -->
+  <rect x="30" y="358" width="740" height="110" rx="8" fill="#0a1020" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="50" y="378" fill="white" font-family="sans-serif" font-size="11" font-weight="bold">Monthly Admissions Trend — 2024</text>
+  <!-- Trend line -->
+  <polyline points="70,440 130,430 190,435 250,410 310,400 370,415 430,395 490,385 550,380 610,365 670,370 730,358"
+    fill="none" stroke="#1e90ff" stroke-width="2.5"/>
+  <polyline points="70,440 130,430 190,435 250,410 310,400 370,415 430,395 490,385 550,380 610,365 670,370 730,358 730,455 70,455"
+    fill="#1e90ff" opacity=".07"/>
+  <!-- Month labels -->
+  <text x="70" y="455" fill="#8aabcc" font-family="sans-serif" font-size="8" text-anchor="middle">Jan</text>
+  <text x="130" y="455" fill="#8aabcc" font-family="sans-serif" font-size="8" text-anchor="middle">Feb</text>
+  <text x="190" y="455" fill="#8aabcc" font-family="sans-serif" font-size="8" text-anchor="middle">Mar</text>
+  <text x="250" y="455" fill="#8aabcc" font-family="sans-serif" font-size="8" text-anchor="middle">Apr</text>
+  <text x="310" y="455" fill="#8aabcc" font-family="sans-serif" font-size="8" text-anchor="middle">May</text>
+  <text x="370" y="455" fill="#8aabcc" font-family="sans-serif" font-size="8" text-anchor="middle">Jun</text>
+  <text x="430" y="455" fill="#8aabcc" font-family="sans-serif" font-size="8" text-anchor="middle">Jul</text>
+  <text x="490" y="455" fill="#8aabcc" font-family="sans-serif" font-size="8" text-anchor="middle">Aug</text>
+  <text x="550" y="455" fill="#8aabcc" font-family="sans-serif" font-size="8" text-anchor="middle">Sep</text>
+  <text x="610" y="455" fill="#8aabcc" font-family="sans-serif" font-size="8" text-anchor="middle">Oct</text>
+  <text x="670" y="455" fill="#8aabcc" font-family="sans-serif" font-size="8" text-anchor="middle">Nov</text>
+  <text x="730" y="455" fill="#8aabcc" font-family="sans-serif" font-size="8" text-anchor="middle">Dec</text>
+
+  <text x="400" y="493" fill="#1e90ff" opacity=".3" font-family="sans-serif" font-size="11" text-anchor="middle">Health Care Analytics — Power BI · Patient Outcomes · Admissions</text>
+</svg>

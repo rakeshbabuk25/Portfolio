@@ -1,0 +1,125 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgBtc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0c0f"/>
+      <stop offset="100%" stop-color="#12160e"/>
+    </linearGradient>
+    <linearGradient id="coinGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f9c846"/>
+      <stop offset="100%" stop-color="#f7931a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgBtc)"/>
+
+  <!-- Grid lines -->
+  <line x1="0" y1="100" x2="800" y2="100" stroke="#1a1f15" stroke-width="1"/>
+  <line x1="0" y1="200" x2="800" y2="200" stroke="#1a1f15" stroke-width="1"/>
+  <line x1="0" y1="300" x2="800" y2="300" stroke="#1a1f15" stroke-width="1"/>
+  <line x1="0" y1="400" x2="800" y2="400" stroke="#1a1f15" stroke-width="1"/>
+  <line x1="200" y1="0" x2="200" y2="500" stroke="#1a1f15" stroke-width="1"/>
+  <line x1="400" y1="0" x2="400" y2="500" stroke="#1a1f15" stroke-width="1"/>
+  <line x1="600" y1="0" x2="600" y2="500" stroke="#1a1f15" stroke-width="1"/>
+
+  <!-- Left panel: Card physical representation -->
+  <rect x="50" y="80" width="280" height="340" rx="16" fill="#111510" stroke="#f7931a" stroke-width="1.5" stroke-opacity=".4"/>
+  <rect x="50" y="80" width="280" height="340" rx="16" fill="none" stroke="#f7931a" stroke-width="1" stroke-opacity=".15" stroke-dasharray="6 4"/>
+
+  <!-- Card chip area -->
+  <text x="190" y="60" fill="#f7931a" font-family="sans-serif" font-size="13" text-anchor="middle" opacity=".5" letter-spacing="3">CRYPTO CARD</text>
+
+  <!-- Bitcoin coin -->
+  <circle cx="190" cy="175" r="55" fill="url(#coinGrad)" opacity=".15"/>
+  <circle cx="190" cy="175" r="48" fill="url(#coinGrad)" opacity=".25"/>
+  <circle cx="190" cy="175" r="42" fill="#f7931a" opacity=".9"/>
+  <text x="190" y="188" fill="#7a3a00" font-family="sans-serif" font-size="38" font-weight="bold" text-anchor="middle">₿</text>
+
+  <!-- QR code block -->
+  <rect x="110" y="245" width="160" height="160" rx="8" fill="white"/>
+  <!-- QR pattern simulation -->
+  <rect x="118" y="253" width="28" height="28" rx="2" fill="#111510"/>
+  <rect x="122" y="257" width="20" height="20" rx="1" fill="white"/>
+  <rect x="125" y="260" width="14" height="14" fill="#111510"/>
+
+  <rect x="214" y="253" width="28" height="28" rx="2" fill="#111510"/>
+  <rect x="218" y="257" width="20" height="20" rx="1" fill="white"/>
+  <rect x="221" y="260" width="14" height="14" fill="#111510"/>
+
+  <rect x="118" y="349" width="28" height="28" rx="2" fill="#111510"/>
+  <rect x="122" y="353" width="20" height="20" rx="1" fill="white"/>
+  <rect x="125" y="356" width="14" height="14" fill="#111510"/>
+
+  <!-- QR dots middle -->
+  <rect x="154" y="253" width="6" height="6" fill="#111510"/>
+  <rect x="163" y="253" width="6" height="6" fill="#111510"/>
+  <rect x="172" y="253" width="6" height="6" fill="#111510"/>
+  <rect x="154" y="262" width="6" height="6" fill="#111510"/>
+  <rect x="172" y="262" width="6" height="6" fill="#111510"/>
+  <rect x="154" y="271" width="6" height="6" fill="#111510"/>
+  <rect x="163" y="271" width="6" height="6" fill="#111510"/>
+  <rect x="154" y="280" width="6" height="6" fill="#111510"/>
+  <rect x="163" y="280" width="6" height="6" fill="#111510"/>
+  <rect x="172" y="280" width="6" height="6" fill="#111510"/>
+  <rect x="154" y="293" width="6" height="6" fill="#111510"/>
+  <rect x="172" y="300" width="6" height="6" fill="#111510"/>
+  <rect x="154" y="310" width="6" height="6" fill="#111510"/>
+  <rect x="163" y="310" width="6" height="6" fill="#111510"/>
+  <rect x="154" y="325" width="6" height="6" fill="#111510"/>
+  <rect x="172" y="325" width="6" height="6" fill="#111510"/>
+  <rect x="163" y="334" width="6" height="6" fill="#111510"/>
+  <rect x="154" y="343" width="6" height="6" fill="#111510"/>
+  <rect x="172" y="343" width="6" height="6" fill="#111510"/>
+  <rect x="200" y="295" width="6" height="6" fill="#111510"/>
+  <rect x="208" y="302" width="6" height="6" fill="#111510"/>
+  <rect x="218" y="295" width="6" height="6" fill="#111510"/>
+  <rect x="226" y="310" width="6" height="6" fill="#111510"/>
+  <rect x="200" y="316" width="6" height="6" fill="#111510"/>
+  <rect x="210" y="326" width="6" height="6" fill="#111510"/>
+  <rect x="220" y="335" width="6" height="6" fill="#111510"/>
+
+  <text x="190" y="424" fill="#f7931a" font-family="monospace" font-size="9" text-anchor="middle" opacity=".7">bc1q8x3k...d7p2</text>
+
+  <!-- Right panel: Flow diagram -->
+  <rect x="380" y="80" width="370" height="340" rx="14" fill="#0d1208" stroke="#2a3520" stroke-width="1"/>
+
+  <text x="565" y="115" fill="#f7931a" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" letter-spacing="2">HOW IT WORKS</text>
+
+  <!-- Step 1 -->
+  <rect x="405" y="130" width="320" height="55" rx="8" fill="#111a0c" stroke="#2a4010" stroke-width="1"/>
+  <circle cx="435" cy="157" r="14" fill="#f7931a" opacity=".2" stroke="#f7931a" stroke-width="1"/>
+  <text x="435" y="162" fill="#f7931a" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">1</text>
+  <text x="458" y="152" fill="white" font-family="sans-serif" font-size="12" font-weight="500">Generate Wallet Key</text>
+  <text x="458" y="169" fill="#8aab7a" font-family="sans-serif" font-size="10">Cryptographic keypair created server-side</text>
+
+  <!-- Arrow -->
+  <line x1="565" y1="185" x2="565" y2="200" stroke="#f7931a" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <polygon points="560,200 570,200 565,208" fill="#f7931a" opacity=".6"/>
+
+  <!-- Step 2 -->
+  <rect x="405" y="210" width="320" height="55" rx="8" fill="#111a0c" stroke="#2a4010" stroke-width="1"/>
+  <circle cx="435" cy="237" r="14" fill="#f7931a" opacity=".2" stroke="#f7931a" stroke-width="1"/>
+  <text x="435" y="242" fill="#f7931a" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">2</text>
+  <text x="458" y="232" fill="white" font-family="sans-serif" font-size="12" font-weight="500">Encode QR Code</text>
+  <text x="458" y="249" fill="#8aab7a" font-family="sans-serif" font-size="10">Bitcoin address encoded into scannable QR</text>
+
+  <!-- Arrow -->
+  <line x1="565" y1="265" x2="565" y2="280" stroke="#f7931a" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <polygon points="560,280 570,280 565,288" fill="#f7931a" opacity=".6"/>
+
+  <!-- Step 3 -->
+  <rect x="405" y="290" width="320" height="55" rx="8" fill="#111a0c" stroke="#2a4010" stroke-width="1"/>
+  <circle cx="435" cy="317" r="14" fill="#f7931a" opacity=".2" stroke="#f7931a" stroke-width="1"/>
+  <text x="435" y="322" fill="#f7931a" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">3</text>
+  <text x="458" y="312" fill="white" font-family="sans-serif" font-size="12" font-weight="500">Print on Card</text>
+  <text x="458" y="329" fill="#8aab7a" font-family="sans-serif" font-size="10">Physical card with QR printed and distributed</text>
+
+  <!-- Arrow -->
+  <line x1="565" y1="345" x2="565" y2="360" stroke="#f7931a" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <polygon points="560,360 570,360 565,368" fill="#f7931a" opacity=".6"/>
+
+  <!-- Step 4 -->
+  <rect x="405" y="368" width="320" height="36" rx="8" fill="#1a2f0f" stroke="#f7931a" stroke-width="1"/>
+  <text x="565" y="391" fill="#f7931a" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">✓  Scan → Bitcoin in Wallet</text>
+
+  <!-- Label -->
+  <text x="400" y="492" fill="#f7931a" opacity=".3" font-family="sans-serif" font-size="12" text-anchor="middle">Bitcoin Generator App — Cybersecurity &amp; Cryptography</text>
+</svg>

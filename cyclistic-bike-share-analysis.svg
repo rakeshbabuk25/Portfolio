@@ -1,0 +1,144 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgCyc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080f14"/>
+      <stop offset="100%" stop-color="#08100a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgCyc)"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="52" fill="#050b0c"/>
+  <text x="30" y="33" fill="white" font-family="sans-serif" font-size="14" font-weight="bold">🚲  Cyclistic Bike-Share — Member vs Casual Rider Analysis</text>
+  <rect x="620" y="14" width="150" height="26" rx="5" fill="#34a853" opacity=".15" stroke="#34a853" stroke-width="1"/>
+  <text x="695" y="31" fill="#34a853" font-family="sans-serif" font-size="11" text-anchor="middle">Google DA Capstone</text>
+
+  <!-- KPI row -->
+  <rect x="30" y="68" width="165" height="66" rx="8" fill="#090f0a" stroke="#1a2a1c" stroke-width="1"/>
+  <text x="50" y="87" fill="#7a9a7c" font-family="sans-serif" font-size="9" letter-spacing="1">TOTAL RIDES</text>
+  <text x="50" y="116" fill="white" font-family="sans-serif" font-size="24" font-weight="bold">5.7M</text>
+
+  <rect x="207" y="68" width="165" height="66" rx="8" fill="#090f0a" stroke="#1a2a1c" stroke-width="1"/>
+  <text x="227" y="87" fill="#7a9a7c" font-family="sans-serif" font-size="9" letter-spacing="1">MEMBER RIDES</text>
+  <text x="227" y="116" fill="#34a853" font-family="sans-serif" font-size="24" font-weight="bold">59.7%</text>
+
+  <rect x="384" y="68" width="165" height="66" rx="8" fill="#090f0a" stroke="#1a2a1c" stroke-width="1"/>
+  <text x="404" y="87" fill="#7a9a7c" font-family="sans-serif" font-size="9" letter-spacing="1">CASUAL RIDES</text>
+  <text x="404" y="116" fill="#febc2e" font-family="sans-serif" font-size="24" font-weight="bold">40.3%</text>
+
+  <rect x="561" y="68" width="209" height="66" rx="8" fill="#090f0a" stroke="#1a2a1c" stroke-width="1"/>
+  <text x="581" y="87" fill="#7a9a7c" font-family="sans-serif" font-size="9" letter-spacing="1">AVG RIDE DURATION</text>
+  <text x="581" y="108" fill="#febc2e" font-family="sans-serif" font-size="18" font-weight="bold">Casual 23min</text>
+  <text x="581" y="128" fill="#34a853" font-family="sans-serif" font-size="16">Member 12min</text>
+
+  <!-- LEFT: Rides by day of week grouped bars -->
+  <rect x="30" y="148" width="380" height="210" rx="8" fill="#07100a" stroke="#1a2a1c" stroke-width="1"/>
+  <text x="50" y="172" fill="white" font-family="sans-serif" font-size="11" font-weight="bold">Rides by Day of Week</text>
+
+  <!-- Grouped bars per day -->
+  <!-- Mon -->
+  <rect x="52" y="250" width="15" height="80" rx="2" fill="#34a853" opacity=".85"/>
+  <rect x="68" y="270" width="15" height="60" rx="2" fill="#febc2e" opacity=".75"/>
+  <text x="67" y="345" fill="#7a9a7c" font-family="sans-serif" font-size="8" text-anchor="middle">Mon</text>
+
+  <!-- Tue -->
+  <rect x="98" y="245" width="15" height="85" rx="2" fill="#34a853" opacity=".85"/>
+  <rect x="114" y="275" width="15" height="55" rx="2" fill="#febc2e" opacity=".75"/>
+  <text x="113" y="345" fill="#7a9a7c" font-family="sans-serif" font-size="8" text-anchor="middle">Tue</text>
+
+  <!-- Wed -->
+  <rect x="144" y="240" width="15" height="90" rx="2" fill="#34a853" opacity=".85"/>
+  <rect x="160" y="280" width="15" height="50" rx="2" fill="#febc2e" opacity=".75"/>
+  <text x="159" y="345" fill="#7a9a7c" font-family="sans-serif" font-size="8" text-anchor="middle">Wed</text>
+
+  <!-- Thu -->
+  <rect x="190" y="242" width="15" height="88" rx="2" fill="#34a853" opacity=".85"/>
+  <rect x="206" y="272" width="15" height="58" rx="2" fill="#febc2e" opacity=".75"/>
+  <text x="205" y="345" fill="#7a9a7c" font-family="sans-serif" font-size="8" text-anchor="middle">Thu</text>
+
+  <!-- Fri -->
+  <rect x="236" y="248" width="15" height="82" rx="2" fill="#34a853" opacity=".85"/>
+  <rect x="252" y="260" width="15" height="70" rx="2" fill="#febc2e" opacity=".85"/>
+  <text x="251" y="345" fill="#7a9a7c" font-family="sans-serif" font-size="8" text-anchor="middle">Fri</text>
+
+  <!-- Sat -->
+  <rect x="282" y="268" width="15" height="62" rx="2" fill="#34a853" opacity=".7"/>
+  <rect x="298" y="245" width="15" height="85" rx="2" fill="#febc2e" opacity=".95"/>
+  <text x="297" y="345" fill="#7a9a7c" font-family="sans-serif" font-size="8" text-anchor="middle">Sat</text>
+
+  <!-- Sun -->
+  <rect x="328" y="272" width="15" height="58" rx="2" fill="#34a853" opacity=".65"/>
+  <rect x="344" y="250" width="15" height="80" rx="2" fill="#febc2e" opacity=".9"/>
+  <text x="343" y="345" fill="#7a9a7c" font-family="sans-serif" font-size="8" text-anchor="middle">Sun</text>
+
+  <!-- Legend -->
+  <rect x="50" y="355" width="10" height="10" rx="2" fill="#34a853"/>
+  <text x="66" y="364" fill="#7a9a7c" font-family="sans-serif" font-size="9">Member</text>
+  <rect x="130" y="355" width="10" height="10" rx="2" fill="#febc2e"/>
+  <text x="146" y="364" fill="#7a9a7c" font-family="sans-serif" font-size="9">Casual</text>
+  <text x="240" y="364" fill="#7a9a7c" font-family="sans-serif" font-size="9" opacity=".7">Casuals peak weekends</text>
+
+  <!-- RIGHT: Monthly trend line chart -->
+  <rect x="425" y="148" width="345" height="210" rx="8" fill="#07100a" stroke="#1a2a1c" stroke-width="1"/>
+  <text x="445" y="172" fill="white" font-family="sans-serif" font-size="11" font-weight="bold">Monthly Rides — 12 Month Trend</text>
+
+  <!-- Member line -->
+  <polyline points="450,320 478,310 506,290 534,262 562,240 590,230 618,228 646,232 674,258 702,290 730,305 745,315"
+    fill="none" stroke="#34a853" stroke-width="2.5"/>
+  <!-- Casual line -->
+  <polyline points="450,338 478,330 506,305 534,268 562,238 590,215 618,210 646,218 674,252 702,310 730,330 745,340"
+    fill="none" stroke="#febc2e" stroke-width="2.5"/>
+
+  <!-- Summer highlight band -->
+  <rect x="590" y="200" width="84" height="130" fill="#febc2e" opacity=".04"/>
+  <text x="632" y="210" fill="#febc2e" font-family="sans-serif" font-size="8" text-anchor="middle" opacity=".5">Summer peak</text>
+
+  <!-- Month labels -->
+  <text x="450" y="355" fill="#7a9a7c" font-family="sans-serif" font-size="7" text-anchor="middle">Jan</text>
+  <text x="478" y="355" fill="#7a9a7c" font-family="sans-serif" font-size="7" text-anchor="middle">Feb</text>
+  <text x="506" y="355" fill="#7a9a7c" font-family="sans-serif" font-size="7" text-anchor="middle">Mar</text>
+  <text x="534" y="355" fill="#7a9a7c" font-family="sans-serif" font-size="7" text-anchor="middle">Apr</text>
+  <text x="562" y="355" fill="#7a9a7c" font-family="sans-serif" font-size="7" text-anchor="middle">May</text>
+  <text x="590" y="355" fill="#7a9a7c" font-family="sans-serif" font-size="7" text-anchor="middle">Jun</text>
+  <text x="618" y="355" fill="#7a9a7c" font-family="sans-serif" font-size="7" text-anchor="middle">Jul</text>
+  <text x="646" y="355" fill="#7a9a7c" font-family="sans-serif" font-size="7" text-anchor="middle">Aug</text>
+  <text x="674" y="355" fill="#7a9a7c" font-family="sans-serif" font-size="7" text-anchor="middle">Sep</text>
+  <text x="702" y="355" fill="#7a9a7c" font-family="sans-serif" font-size="7" text-anchor="middle">Oct</text>
+  <text x="730" y="355" fill="#7a9a7c" font-family="sans-serif" font-size="7" text-anchor="middle">Nov</text>
+  <text x="745" y="355" fill="#7a9a7c" font-family="sans-serif" font-size="7" text-anchor="middle">Dec</text>
+
+  <!-- Legend right chart -->
+  <rect x="445" y="365" width="8" height="8" fill="#34a853"/>
+  <text x="458" y="373" fill="#7a9a7c" font-family="sans-serif" font-size="9">Member</text>
+  <rect x="510" y="365" width="8" height="8" fill="#febc2e"/>
+  <text x="523" y="373" fill="#7a9a7c" font-family="sans-serif" font-size="9">Casual</text>
+
+  <!-- Bottom: bike type bar -->
+  <rect x="30" y="370" width="740" height="98" rx="8" fill="#07100a" stroke="#1a2a1c" stroke-width="1"/>
+  <text x="50" y="392" fill="white" font-family="sans-serif" font-size="11" font-weight="bold">Ride Type Usage — Classic vs Electric vs Docked</text>
+
+  <!-- stacked bar member -->
+  <text x="50" y="418" fill="#7a9a7c" font-family="sans-serif" font-size="9">Member</text>
+  <rect x="110" y="408" width="220" height="18" rx="3" fill="#34a853" opacity=".8"/>
+  <rect x="330" y="408" width="155" height="18" rx="3" fill="#1e90ff" opacity=".7"/>
+  <rect x="485" y="408" width="40" height="18" rx="3" fill="#9b59b6" opacity=".6"/>
+  <text x="220" y="421" fill="white" font-family="sans-serif" font-size="9" text-anchor="middle">Classic 49%</text>
+  <text x="407" y="421" fill="white" font-family="sans-serif" font-size="9" text-anchor="middle">Electric 34%</text>
+
+  <text x="50" y="450" fill="#7a9a7c" font-family="sans-serif" font-size="9">Casual</text>
+  <rect x="110" y="440" width="185" height="18" rx="3" fill="#febc2e" opacity=".8"/>
+  <rect x="295" y="440" width="175" height="18" rx="3" fill="#1e90ff" opacity=".6"/>
+  <rect x="470" y="440" width="65" height="18" rx="3" fill="#9b59b6" opacity=".5"/>
+  <text x="202" y="453" fill="white" font-family="sans-serif" font-size="9" text-anchor="middle">Classic 41%</text>
+  <text x="382" y="453" fill="white" font-family="sans-serif" font-size="9" text-anchor="middle">Electric 39%</text>
+
+  <!-- Legend for types -->
+  <rect x="570" y="413" width="8" height="8" fill="#34a853"/>
+  <text x="582" y="421" fill="#7a9a7c" font-family="sans-serif" font-size="8">Classic</text>
+  <rect x="620" y="413" width="8" height="8" fill="#1e90ff"/>
+  <text x="632" y="421" fill="#7a9a7c" font-family="sans-serif" font-size="8">Electric</text>
+  <rect x="670" y="413" width="8" height="8" fill="#9b59b6"/>
+  <text x="682" y="421" fill="#7a9a7c" font-family="sans-serif" font-size="8">Docked</text>
+
+  <text x="400" y="493" fill="#34a853" opacity=".3" font-family="sans-serif" font-size="11" text-anchor="middle">Cyclistic Bike-Share — R · ggplot2 · Tableau · Google DA Capstone</text>
+</svg>

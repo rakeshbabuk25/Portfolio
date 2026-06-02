@@ -1,0 +1,93 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a1628"/>
+      <stop offset="100%" stop-color="#1a2f4e"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1c2e45"/>
+      <stop offset="100%" stop-color="#162338"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#sky)"/>
+
+  <!-- Stars -->
+  <circle cx="60" cy="40" r="1.2" fill="#4fc3f7" opacity=".6"/>
+  <circle cx="130" cy="25" r="1" fill="white" opacity=".5"/>
+  <circle cx="200" cy="55" r="1.5" fill="#4fc3f7" opacity=".4"/>
+  <circle cx="310" cy="30" r="1" fill="white" opacity=".5"/>
+  <circle cx="450" cy="18" r="1.2" fill="white" opacity=".4"/>
+  <circle cx="560" cy="44" r="1" fill="#4fc3f7" opacity=".6"/>
+  <circle cx="670" cy="22" r="1.5" fill="white" opacity=".3"/>
+  <circle cx="740" cy="50" r="1" fill="white" opacity=".5"/>
+
+  <!-- Mountain silhouette -->
+  <polygon points="0,280 80,160 160,240 250,130 360,220 420,170 520,260 600,150 700,230 800,160 800,500 0,500" fill="#0d1f35"/>
+
+  <!-- Main browser card -->
+  <rect x="80" y="60" width="640" height="370" rx="14" fill="url(#card)" stroke="#1e90ff" stroke-width="1" stroke-opacity=".3"/>
+
+  <!-- Browser chrome -->
+  <rect x="80" y="60" width="640" height="40" rx="14" fill="#0f1e30"/>
+  <rect x="80" y="86" width="640" height="14" fill="#0f1e30"/>
+  <circle cx="110" cy="80" r="6" fill="#ff5f57" opacity=".8"/>
+  <circle cx="130" cy="80" r="6" fill="#febc2e" opacity=".8"/>
+  <circle cx="150" cy="80" r="6" fill="#28c840" opacity=".8"/>
+  <rect x="180" y="70" width="360" height="20" rx="6" fill="#1a2f4e"/>
+  <text x="360" y="84" fill="#4fc3f7" font-family="monospace" font-size="11" text-anchor="middle" opacity=".7">touristbook.app / explore</text>
+
+  <!-- Hero banner inside browser -->
+  <rect x="80" y="100" width="640" height="100" fill="#0b1826"/>
+  <text x="220" y="145" fill="white" font-family="sans-serif" font-size="22" font-weight="bold" letter-spacing="1">Explore the World</text>
+  <text x="220" y="168" fill="#4fc3f7" font-family="sans-serif" font-size="12" opacity=".8">Book tours, attractions &amp; adventures online</text>
+
+  <!-- Search bar -->
+  <rect x="100" y="210" width="400" height="36" rx="8" fill="#0f1e30" stroke="#1e90ff" stroke-width="1.5"/>
+  <text x="120" y="233" fill="#4fc3f7" font-family="sans-serif" font-size="12" opacity=".7">Search destinations, attractions...</text>
+  <rect x="510" y="210" width="90" height="36" rx="8" fill="#1e90ff"/>
+  <text x="555" y="233" fill="white" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">Search</text>
+
+  <!-- Date picker row -->
+  <rect x="100" y="258" width="180" height="30" rx="6" fill="#0f1e30" stroke="#263a50" stroke-width="1"/>
+  <text x="115" y="277" fill="#8aabcc" font-family="sans-serif" font-size="11">📅  15 Aug 2025</text>
+  <rect x="290" y="258" width="180" height="30" rx="6" fill="#0f1e30" stroke="#263a50" stroke-width="1"/>
+  <text x="305" y="277" fill="#8aabcc" font-family="sans-serif" font-size="11">📅  22 Aug 2025</text>
+  <rect x="480" y="258" width="120" height="30" rx="6" fill="#0f1e30" stroke="#263a50" stroke-width="1"/>
+  <text x="495" y="277" fill="#8aabcc" font-family="sans-serif" font-size="11">👥  2 Adults</text>
+
+  <!-- Project cards -->
+  <rect x="100" y="304" width="180" height="110" rx="8" fill="#0f1e30" stroke="#1e3a5f" stroke-width="1"/>
+  <rect x="100" y="304" width="180" height="55" rx="8" fill="#0a2540"/>
+  <rect x="100" y="340" width="180" height="19" fill="#0a2540"/>
+  <text x="190" y="337" fill="#4fc3f7" font-family="sans-serif" font-size="18" text-anchor="middle">🏔️</text>
+  <text x="115" y="375" fill="white" font-family="sans-serif" font-size="11" font-weight="bold">Mountain Trek</text>
+  <text x="115" y="391" fill="#4fc3f7" font-family="sans-serif" font-size="11">£89 / person</text>
+  <rect x="115" y="400" width="75" height="6" rx="3" fill="#1e3a5f"/>
+  <rect x="115" y="400" width="55" height="6" rx="3" fill="#1e90ff"/>
+
+  <rect x="292" y="304" width="180" height="110" rx="8" fill="#0f1e30" stroke="#1e3a5f" stroke-width="1"/>
+  <rect x="292" y="304" width="180" height="55" rx="8" fill="#0a2540"/>
+  <rect x="292" y="340" width="180" height="19" fill="#0a2540"/>
+  <text x="382" y="337" fill="#4fc3f7" font-family="sans-serif" font-size="18" text-anchor="middle">🏖️</text>
+  <text x="307" y="375" fill="white" font-family="sans-serif" font-size="11" font-weight="bold">Coastal Tour</text>
+  <text x="307" y="391" fill="#4fc3f7" font-family="sans-serif" font-size="11">£120 / person</text>
+  <rect x="307" y="400" width="75" height="6" rx="3" fill="#1e3a5f"/>
+  <rect x="307" y="400" width="65" height="6" rx="3" fill="#1e90ff"/>
+
+  <rect x="484" y="304" width="180" height="110" rx="8" fill="#0f1e30" stroke="#1e90ff" stroke-width="1.5"/>
+  <rect x="484" y="304" width="180" height="55" rx="8" fill="#0a2540"/>
+  <rect x="484" y="340" width="180" height="19" fill="#0a2540"/>
+  <text x="574" y="337" fill="#4fc3f7" font-family="sans-serif" font-size="18" text-anchor="middle">🏛️</text>
+  <text x="499" y="375" fill="white" font-family="sans-serif" font-size="11" font-weight="bold">City Explorer</text>
+  <text x="499" y="391" fill="#1e90ff" font-family="sans-serif" font-size="11" font-weight="bold">£65 / person</text>
+  <rect x="499" y="400" width="75" height="6" rx="3" fill="#1e3a5f"/>
+  <rect x="499" y="400" width="45" height="6" rx="3" fill="#1e90ff"/>
+
+  <!-- Pay button strip -->
+  <rect x="100" y="425" width="600" height="1" fill="#1e3a5f"/>
+  <rect x="490" y="435" width="190" height="30" rx="8" fill="#1e90ff"/>
+  <text x="585" y="454" fill="white" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">💳  Pay &amp; Confirm</text>
+
+  <!-- Label -->
+  <text x="400" y="492" fill="#4fc3f7" opacity=".35" font-family="sans-serif" font-size="12" text-anchor="middle">Tourism Booking Web App</text>
+</svg>

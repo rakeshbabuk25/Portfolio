@@ -1,0 +1,116 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgAir" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f0a12"/>
+      <stop offset="100%" stop-color="#100808"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bgAir)"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="800" height="52" fill="#0a0608"/>
+  <text x="30" y="33" fill="white" font-family="sans-serif" font-size="14" font-weight="bold">🏠  Airbnb London — Exploratory Data Analysis</text>
+  <rect x="640" y="14" width="130" height="26" rx="5" fill="#ff5a5f" opacity=".15" stroke="#ff5a5f" stroke-width="1"/>
+  <text x="705" y="31" fill="#ff5a5f" font-family="sans-serif" font-size="11" text-anchor="middle">Python · Pandas</text>
+
+  <!-- KPI row -->
+  <rect x="30" y="68" width="170" height="66" rx="8" fill="#150d10" stroke="#2a1520" stroke-width="1"/>
+  <text x="50" y="87" fill="#8a7a80" font-family="sans-serif" font-size="9" letter-spacing="1">TOTAL LISTINGS</text>
+  <text x="50" y="116" fill="white" font-family="sans-serif" font-size="26" font-weight="bold">87,946</text>
+
+  <rect x="213" y="68" width="170" height="66" rx="8" fill="#150d10" stroke="#2a1520" stroke-width="1"/>
+  <text x="233" y="87" fill="#8a7a80" font-family="sans-serif" font-size="9" letter-spacing="1">MEDIAN PRICE / NIGHT</text>
+  <text x="233" y="116" fill="#ff5a5f" font-family="sans-serif" font-size="26" font-weight="bold">£87</text>
+
+  <rect x="396" y="68" width="170" height="66" rx="8" fill="#150d10" stroke="#2a1520" stroke-width="1"/>
+  <text x="416" y="87" fill="#8a7a80" font-family="sans-serif" font-size="9" letter-spacing="1">AVG REVIEW SCORE</text>
+  <text x="416" y="116" fill="#febc2e" font-family="sans-serif" font-size="26" font-weight="bold">4.62</text>
+
+  <rect x="579" y="68" width="190" height="66" rx="8" fill="#150d10" stroke="#2a1520" stroke-width="1"/>
+  <text x="599" y="87" fill="#8a7a80" font-family="sans-serif" font-size="9" letter-spacing="1">TOP BOROUGH</text>
+  <text x="599" y="110" fill="white" font-family="sans-serif" font-size="18" font-weight="bold">Westminster</text>
+  <text x="599" y="128" fill="#ff5a5f" font-family="sans-serif" font-size="10">8,412 listings</text>
+
+  <!-- LEFT: Price by borough bar chart -->
+  <rect x="30" y="148" width="370" height="200" rx="8" fill="#0d080e" stroke="#2a1520" stroke-width="1"/>
+  <text x="50" y="172" fill="white" font-family="sans-serif" font-size="11" font-weight="bold">Median Price by Borough (top 8)</text>
+
+  <!-- Horizontal bars -->
+  <text x="170" y="196" fill="#8a7a80" font-family="sans-serif" font-size="9" text-anchor="end">Westminster</text>
+  <rect x="175" y="186" width="180" height="14" rx="3" fill="#ff5a5f" opacity=".9"/>
+  <text x="360" y="198" fill="white" font-family="sans-serif" font-size="9">£142</text>
+
+  <text x="170" y="218" fill="#8a7a80" font-family="sans-serif" font-size="9" text-anchor="end">Kensington</text>
+  <rect x="175" y="208" width="165" height="14" rx="3" fill="#ff5a5f" opacity=".75"/>
+  <text x="345" y="220" fill="white" font-family="sans-serif" font-size="9">£130</text>
+
+  <text x="170" y="240" fill="#8a7a80" font-family="sans-serif" font-size="9" text-anchor="end">City of London</text>
+  <rect x="175" y="230" width="145" height="14" rx="3" fill="#ff5a5f" opacity=".65"/>
+  <text x="325" y="242" fill="white" font-family="sans-serif" font-size="9">£114</text>
+
+  <text x="170" y="262" fill="#8a7a80" font-family="sans-serif" font-size="9" text-anchor="end">Camden</text>
+  <rect x="175" y="252" width="125" height="14" rx="3" fill="#ff5a5f" opacity=".55"/>
+  <text x="305" y="264" fill="white" font-family="sans-serif" font-size="9">£98</text>
+
+  <text x="170" y="284" fill="#8a7a80" font-family="sans-serif" font-size="9" text-anchor="end">Hackney</text>
+  <rect x="175" y="274" width="108" height="14" rx="3" fill="#ff5a5f" opacity=".45"/>
+  <text x="288" y="286" fill="white" font-family="sans-serif" font-size="9">£85</text>
+
+  <text x="170" y="306" fill="#8a7a80" font-family="sans-serif" font-size="9" text-anchor="end">Southwark</text>
+  <rect x="175" y="296" width="95" height="14" rx="3" fill="#ff5a5f" opacity=".4"/>
+  <text x="275" y="308" fill="white" font-family="sans-serif" font-size="9">£75</text>
+
+  <text x="170" y="328" fill="#8a7a80" font-family="sans-serif" font-size="9" text-anchor="end">Tower Hamlets</text>
+  <rect x="175" y="318" width="82" height="14" rx="3" fill="#ff5a5f" opacity=".35"/>
+  <text x="262" y="330" fill="white" font-family="sans-serif" font-size="9">£65</text>
+
+  <!-- RIGHT: Room type donut -->
+  <rect x="415" y="148" width="355" height="200" rx="8" fill="#0d080e" stroke="#2a1520" stroke-width="1"/>
+  <text x="435" y="172" fill="white" font-family="sans-serif" font-size="11" font-weight="bold">Room Type Distribution</text>
+
+  <circle cx="530" cy="253" r="60" fill="none" stroke="#ff5a5f" stroke-width="20" stroke-dasharray="226 151" stroke-dashoffset="0"/>
+  <circle cx="530" cy="253" r="60" fill="none" stroke="#febc2e" stroke-width="20" stroke-dasharray="98 279" stroke-dashoffset="-226"/>
+  <circle cx="530" cy="253" r="60" fill="none" stroke="#1e90ff" stroke-width="20" stroke-dasharray="27 350" stroke-dashoffset="-324"/>
+  <text x="530" y="248" fill="white" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle">60%</text>
+  <text x="530" y="264" fill="#8a7a80" font-family="sans-serif" font-size="9" text-anchor="middle">Entire home</text>
+
+  <rect x="620" y="218" width="10" height="10" rx="2" fill="#ff5a5f"/>
+  <text x="636" y="227" fill="#8a7a80" font-family="sans-serif" font-size="9">Entire home 60%</text>
+  <rect x="620" y="238" width="10" height="10" rx="2" fill="#febc2e"/>
+  <text x="636" y="247" fill="#8a7a80" font-family="sans-serif" font-size="9">Private room 26%</text>
+  <rect x="620" y="258" width="10" height="10" rx="2" fill="#1e90ff"/>
+  <text x="636" y="267" fill="#8a7a80" font-family="sans-serif" font-size="9">Shared room 7%</text>
+
+  <!-- Bottom: Price distribution histogram -->
+  <rect x="30" y="360" width="740" height="108" rx="8" fill="#0d080e" stroke="#2a1520" stroke-width="1"/>
+  <text x="50" y="382" fill="white" font-family="sans-serif" font-size="11" font-weight="bold">Price Distribution (£/night) — Right-skewed long tail</text>
+
+  <!-- Histogram bars -->
+  <rect x="55" y="408" width="30" height="40" rx="2" fill="#ff5a5f" opacity=".5"/>
+  <rect x="88" y="400" width="30" height="48" rx="2" fill="#ff5a5f" opacity=".7"/>
+  <rect x="121" y="390" width="30" height="58" rx="2" fill="#ff5a5f" opacity=".9"/>
+  <rect x="154" y="396" width="30" height="52" rx="2" fill="#ff5a5f" opacity=".85"/>
+  <rect x="187" y="405" width="30" height="43" rx="2" fill="#ff5a5f" opacity=".7"/>
+  <rect x="220" y="415" width="30" height="33" rx="2" fill="#ff5a5f" opacity=".55"/>
+  <rect x="253" y="422" width="30" height="26" rx="2" fill="#ff5a5f" opacity=".45"/>
+  <rect x="286" y="427" width="30" height="21" rx="2" fill="#ff5a5f" opacity=".35"/>
+  <rect x="319" y="432" width="30" height="16" rx="2" fill="#ff5a5f" opacity=".28"/>
+  <rect x="352" y="435" width="30" height="13" rx="2" fill="#ff5a5f" opacity=".22"/>
+  <rect x="385" y="437" width="30" height="11" rx="2" fill="#ff5a5f" opacity=".18"/>
+  <rect x="418" y="439" width="30" height="9" rx="2" fill="#ff5a5f" opacity=".15"/>
+  <rect x="451" y="440" width="30" height="8" rx="2" fill="#ff5a5f" opacity=".12"/>
+  <rect x="484" y="441" width="30" height="7" rx="2" fill="#ff5a5f" opacity=".1"/>
+  <rect x="517" y="442" width="20" height="6" rx="2" fill="#ff5a5f" opacity=".08"/>
+  <!-- X labels -->
+  <text x="70" y="458" fill="#8a7a80" font-family="sans-serif" font-size="8" text-anchor="middle">£0</text>
+  <text x="154" y="458" fill="#8a7a80" font-family="sans-serif" font-size="8" text-anchor="middle">£50</text>
+  <text x="237" y="458" fill="#8a7a80" font-family="sans-serif" font-size="8" text-anchor="middle">£100</text>
+  <text x="320" y="458" fill="#8a7a80" font-family="sans-serif" font-size="8" text-anchor="middle">£150</text>
+  <text x="403" y="458" fill="#8a7a80" font-family="sans-serif" font-size="8" text-anchor="middle">£200</text>
+  <text x="486" y="458" fill="#8a7a80" font-family="sans-serif" font-size="8" text-anchor="middle">£250</text>
+  <!-- Median line -->
+  <line x1="193" y1="388" x2="193" y2="450" stroke="#febc2e" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <text x="193" y="385" fill="#febc2e" font-family="sans-serif" font-size="8" text-anchor="middle">median £87</text>
+
+  <text x="400" y="493" fill="#ff5a5f" opacity=".3" font-family="sans-serif" font-size="11" text-anchor="middle">Airbnb London EDA — Python · Pandas · Matplotlib · Seaborn</text>
+</svg>
