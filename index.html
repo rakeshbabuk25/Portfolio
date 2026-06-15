@@ -308,22 +308,40 @@
       margin: 0;
       padding: 0;
       display: grid;
-      gap: 1.25rem;
+      gap: 1.75rem;
     }
 
     .repo-list li {
-      padding: 1rem 0;
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 1.5rem;
+      padding: 1.25rem 0;
       border-bottom: 1px solid rgba(255,255,255,.08);
+      align-items: start;
     }
 
     .repo-list li:last-child {
       border-bottom: none;
     }
 
+    .repo-thumbnail {
+      width: 140px;
+      height: 88px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,.08);
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
     .repo-list a {
       color: var(--text);
       font-weight: 700;
       font-size: 1rem;
+      transition: color 0.2s ease;
+    }
+
+    .repo-list a:hover {
+      color: var(--accent);
     }
 
     .repo-list p {
@@ -426,6 +444,15 @@
       .about-grid,
       .contact-grid {
         grid-template-columns: 1fr;
+      }
+
+      .repo-list li {
+        grid-template-columns: 1fr;
+      }
+
+      .repo-thumbnail {
+        width: 100%;
+        height: 200px;
       }
     }
 
@@ -544,7 +571,7 @@
       </div>
       <div class="grid portfolio-grid">
         <article class="project-card">
-          <img src="images/airbnb-london-analysis.svg" alt="Airbnb London Analysis project image" />
+          <img src="./images/airbnb-london-analysis.svg" alt="Airbnb London Analysis project image" />
           <div class="project-card-content">
             <h3>Airbnb London Analysis</h3>
             <p>In-depth analysis of the London short-term rental market using Inside Airbnb data, with cleaning, visualization, and actionable insights.</p>
@@ -552,7 +579,7 @@
           </div>
         </article>
         <article class="project-card">
-          <img src="images/cyclistic-bike-share-analysis.svg" alt="Cyclistic Bike Share Analysis project image" />
+          <img src="./images/cyclistic-bike-share-analysis.svg" alt="Cyclistic Bike Share Analysis project image" />
           <div class="project-card-content">
             <h3>Cyclistic Bike Share Analysis</h3>
             <p>Bike share usage and rider behavior analysis that reveals trends, seasonality, and rider segment opportunities for sustainable city mobility.</p>
@@ -560,43 +587,27 @@
           </div>
         </article>
         <article class="project-card">
-          <img src="images/fraud-rt-mlops.svg" alt="Fraud RT MLOps project image" />
+          <img src="./images/fraud-rt-mlops.svg" alt="Fraud RT MLOps project image" />
           <div class="project-card-content">
-            <h3>Fraud RT MLOps</h3>
-            <p>Production-style real-time fraud detection system with streaming inference via Redpanda, a FastAPI scoring API, drift-aware monitoring, and automated LightGBM retraining.</p>
+            <h3>fraud-rt-mlops</h3>
+            <p>Real-time fraud detection pipeline built with MLOps practices to monitor transactions, detect anomalies, and improve model deployment reliability.</p>
             <a class="project-link" href="https://github.com/rakeshbabuk25/fraud-rt-mlops" target="_blank" rel="noreferrer">View repository</a>
           </div>
         </article>
         <article class="project-card">
-          <img src="images/guardian-ai-health-monitor.svg" alt="Guardian AI Health Monitor project image" />
+          <img src="./images/guardian-ai-health-monitor.svg" alt="Guardian AI Health Monitor project image" />
           <div class="project-card-content">
-            <h3>Guardian AI Health Monitor</h3>
-            <p>ESP32-S3 TinyML health monitoring system that classifies heart rate, detects voice stress via MFCC + CNN, and flags fatigue through blink-rate analysis — all at the edge, with secure ThingSpeak cloud sync.</p>
+            <h3>guardian-ai-health-monitor-</h3>
+            <p>ESP32-S3 TinyML health monitoring system designed for low-power diagnostics, sensor analytics, and embedded AI health applications.</p>
             <a class="project-link" href="https://github.com/rakeshbabuk25/guardian-ai-health-monitor-" target="_blank" rel="noreferrer">View repository</a>
           </div>
         </article>
         <article class="project-card">
-          <img src="images/health-care.svg" alt="Health Care project image" />
+          <img src="./images/health-care.svg" alt="Health Care project image" />
           <div class="project-card-content">
-            <h3>Health Care Analytics</h3>
-            <p>Healthcare analytics dashboard covering patient admissions, outcome distributions, readmission rates, and 12-month trends — built for data-driven clinical and operational decisions.</p>
-            <a class="project-link" href="https://github.com/rakeshbabuk25/guardian-ai-health-monitor-" target="_blank" rel="noreferrer">View repository</a>
-          </div>
-        </article>
-        <article class="project-card">
-          <img src="images/tourism-booking-web-app.svg" alt="Tourism Booking Web App project image" />
-          <div class="project-card-content">
-            <h3>Tourism Booking Web App</h3>
-            <p>End-to-end tourist package booking platform where users browse attractions, pick dates, and complete card payments — all without leaving the app.</p>
-            <a class="project-link" href="https://github.com/rakeshbabuk25" target="_blank" rel="noreferrer">View repository</a>
-          </div>
-        </article>
-        <article class="project-card">
-          <img src="images/bitcoin-generator-app.svg" alt="Bitcoin Generator App project image" />
-          <div class="project-card-content">
-            <h3>Bitcoin Generator App</h3>
-            <p>Cryptographic tool built for a cryptocurrency exchange that generates a unique QR code per wallet, printed on a physical card. Scanning the code delivers Bitcoin directly to the holder's wallet.</p>
-            <a class="project-link" href="https://github.com/rakeshbabuk25" target="_blank" rel="noreferrer">View repository</a>
+            <h3>Health-Care</h3>
+            <p>Predictive healthcare analytics project focused on patient outcomes, data-driven decision support, and healthcare process optimization.</p>
+            <a class="project-link" href="https://github.com/rakeshbabuk25/Health-Care" target="_blank" rel="noreferrer">View repository</a>
           </div>
         </article>
       </div>
@@ -610,59 +621,80 @@
       <div class="card">
         <ul class="repo-list">
           <li>
-            <a href="https://github.com/rakeshbabuk25/airbnb-london-analysis" target="_blank" rel="noreferrer">airbnb-london-analysis</a>
-            <p>Airbnb market analysis for London using Inside Airbnb data. Cleaned in Google Sheets, visualised in Tableau.</p>
-            <div class="repo-meta">
-              <span class="repo-badge">⭐ 0</span>
-              <span class="repo-badge">Language: Unknown</span>
+            <img src="./images/airbnb-london-analysis.svg" alt="Airbnb London Analysis" class="repo-thumbnail" />
+            <div>
+              <a href="https://github.com/rakeshbabuk25/airbnb-london-analysis" target="_blank" rel="noreferrer">airbnb-london-analysis</a>
+              <p>Airbnb market analysis for London using Inside Airbnb data. Cleaned in Google Sheets, visualised in Tableau.</p>
+              <div class="repo-meta">
+                <span class="repo-badge">⭐ 0</span>
+                <span class="repo-badge">Language: Unknown</span>
+              </div>
             </div>
           </li>
           <li>
-            <a href="https://github.com/rakeshbabuk25/cyclistic-bike-share-analysis" target="_blank" rel="noreferrer">cyclistic-bike-share-analysis</a>
-            <p>Data analysis project focused on understanding bike-share usage and rider behaviour.</p>
-            <div class="repo-meta">
-              <span class="repo-badge">⭐ 0</span>
-              <span class="repo-badge">Language: Python</span>
+            <img src="./images/cyclistic-bike-share-analysis.svg" alt="Cyclistic Bike Share Analysis" class="repo-thumbnail" />
+            <div>
+              <a href="https://github.com/rakeshbabuk25/cyclistic-bike-share-analysis" target="_blank" rel="noreferrer">cyclistic-bike-share-analysis</a>
+              <p>Data analysis project focused on understanding bike-share usage and rider behaviour.</p>
+              <div class="repo-meta">
+                <span class="repo-badge">⭐ 0</span>
+                <span class="repo-badge">Language: Python</span>
+              </div>
             </div>
           </li>
           <li>
-            <a href="https://github.com/rakeshbabuk25/Flood-prediction" target="_blank" rel="noreferrer">Flood-prediction</a>
-            <p>Prediction of whether a flood may occur or not, depending on rainfall data, using machine learning algorithms.</p>
-            <div class="repo-meta">
-              <span class="repo-badge">⭐ 0</span>
-              <span class="repo-badge">Language: Unknown</span>
+            <div style="height: 88px; border-radius: 12px; background: rgba(255,255,255,.02); border: 1px solid rgba(255,255,255,.08); display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 0.9rem; text-align: center;"></div>
+            <div>
+              <a href="https://github.com/rakeshbabuk25/Flood-prediction" target="_blank" rel="noreferrer">Flood-prediction</a>
+              <p>Prediction of whether a flood may occur or not, depending on rainfall data, using machine learning algorithms.</p>
+              <div class="repo-meta">
+                <span class="repo-badge">⭐ 0</span>
+                <span class="repo-badge">Language: Unknown</span>
+              </div>
             </div>
           </li>
           <li>
-            <a href="https://github.com/rakeshbabuk25/fraud-rt-mlops" target="_blank" rel="noreferrer">fraud-rt-mlops</a>
-            <p>Realtime fraud detection and MLOps project for secure transaction monitoring.</p>
-            <div class="repo-meta">
-              <span class="repo-badge">⭐ 0</span>
-              <span class="repo-badge">Language: Python</span>
+            <img src="./images/fraud-rt-mlops.svg" alt="Fraud RT MLOps" class="repo-thumbnail" />
+            <div>
+              <a href="https://github.com/rakeshbabuk25/fraud-rt-mlops" target="_blank" rel="noreferrer">fraud-rt-mlops</a>
+              <p>Realtime fraud detection and MLOps project for secure transaction monitoring.</p>
+              <div class="repo-meta">
+                <span class="repo-badge">⭐ 0</span>
+                <span class="repo-badge">Language: Python</span>
+              </div>
             </div>
           </li>
           <li>
-            <a href="https://github.com/rakeshbabuk25/guardian-ai-health-monitor-" target="_blank" rel="noreferrer">guardian-ai-health-monitor-</a>
-            <p>ESP32-S3 TinyML-based AI Health Monitoring System.</p>
-            <div class="repo-meta">
-              <span class="repo-badge">⭐ 0</span>
-              <span class="repo-badge">Language: Unknown</span>
+            <img src="./images/guardian-ai-health-monitor.svg" alt="Guardian AI Health Monitor" class="repo-thumbnail" />
+            <div>
+              <a href="https://github.com/rakeshbabuk25/guardian-ai-health-monitor-" target="_blank" rel="noreferrer">guardian-ai-health-monitor-</a>
+              <p>ESP32-S3 TinyML-based AI Health Monitoring System.</p>
+              <div class="repo-meta">
+                <span class="repo-badge">⭐ 0</span>
+                <span class="repo-badge">Language: Unknown</span>
+              </div>
             </div>
           </li>
           <li>
-            <a href="https://github.com/rakeshbabuk25/Health-Care" target="_blank" rel="noreferrer">Health-Care</a>
-            <p>Healthcare data project repository focused on predictive analytics and patient outcomes.</p>
-            <div class="repo-meta">
-              <span class="repo-badge">⭐ 0</span>
-              <span class="repo-badge">Language: C++</span>
+            <img src="./images/health-care.svg" alt="Health Care" class="repo-thumbnail" />
+            <div>
+              <a href="https://github.com/rakeshbabuk25/Health-Care" target="_blank" rel="noreferrer">Health-Care</a>
+              <p>Healthcare data project repository focused on predictive analytics and patient outcomes.</p>
+              <div class="repo-meta">
+                <span class="repo-badge">⭐ 0</span>
+                <span class="repo-badge">Language: C++</span>
+              </div>
             </div>
           </li>
           <li>
-            <a href="https://github.com/rakeshbabuk25/Portfolio" target="_blank" rel="noreferrer">Portfolio</a>
-            <p>My personal portfolio website repository.</p>
-            <div class="repo-meta">
-              <span class="repo-badge">⭐ 0</span>
-              <span class="repo-badge">Language: Unknown</span>
+            <div style="height: 88px; border-radius: 12px; background: rgba(255,255,255,.02); border: 1px solid rgba(255,255,255,.08); display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 0.9rem; text-align: center;"></div>
+            <div>
+              <a href="https://github.com/rakeshbabuk25/Portfolio" target="_blank" rel="noreferrer">Portfolio</a>
+              <p>My personal portfolio website repository.</p>
+              <div class="repo-meta">
+                <span class="repo-badge">⭐ 0</span>
+                <span class="repo-badge">Language: Unknown</span>
+              </div>
             </div>
           </li>
         </ul>
